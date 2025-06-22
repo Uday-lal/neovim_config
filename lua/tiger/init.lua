@@ -16,3 +16,8 @@ opt.autoindent = true
 
 -- Setting Color scheme
 vim.cmd [[colorscheme monokai_soda]]
+
+
+-- Airline themes
+vim.cmd [[AirlineTheme base16_monokai]]
+
