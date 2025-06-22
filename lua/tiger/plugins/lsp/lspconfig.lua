@@ -6,7 +6,7 @@ return {
         { "antosha417/nvim-lsp-file-operations", config = true },
     },
     config = function()
-    -- import lspconfig plugin
+    -- import nvim-lspconfigg plugin
     local lspconfig = require("lspconfig")
 
     -- import mason_lspconfig plugin
@@ -15,8 +15,12 @@ return {
     -- import cmp-nvim-lsp plugin
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
-    local keymap = vim.keymap -- for conciseness
+    -- setting blink
+    local capabilities = require('blink.cmp').get_lsp_capabilities()
 
+    lspconfig['lua_ls'].setup({ capabilities = capabilities }) 
+
+    local keymap = vim.keymap -- for conciseness
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
       callback = function(ev)
