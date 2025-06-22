@@ -1,5 +1,6 @@
 require("tiger.keymap")
 require("tiger.lazy")
+require("tiger.terminal")
 
 -- Setting general options
 local opt = vim.opt

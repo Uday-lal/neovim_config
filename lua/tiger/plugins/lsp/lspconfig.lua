@@ -8,7 +8,7 @@ return {
     config = function()
     -- import nvim-lspconfigg plugin
     local lspconfig = require("lspconfig")
-
+    
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")
 
