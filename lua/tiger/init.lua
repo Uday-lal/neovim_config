@@ -1,7 +1,6 @@
 require("tiger.keymap")
 require("tiger.lazy")
 
-
 -- Setting general options
 local opt = vim.opt
 

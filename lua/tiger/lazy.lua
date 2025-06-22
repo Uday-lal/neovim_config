@@ -12,5 +12,5 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("tiger.plugins")
+require("lazy").setup({{import = "tiger.plugins"}, {import = "tiger.plugins.lsp"}})
 
