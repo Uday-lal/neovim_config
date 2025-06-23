@@ -15,6 +15,15 @@ opt.expandtab = true
 opt.autoindent = true
 
 
+-- make background transparent
+vim.cmd([[
+augroup TransparentBackground
+autocmd!
+autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
+autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
+augroup END
+]])
+
 -- Setting Color scheme
 vim.cmd [[colorscheme monokai_soda]]
 
