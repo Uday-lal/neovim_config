@@ -25,7 +25,7 @@ augroup END
 ]])
 
 -- Setting Color scheme
-vim.cmd [[colorscheme monokai_soda]]
+vim.cmd [[colorscheme tokyodark]]
 
 
 -- Airline themes
