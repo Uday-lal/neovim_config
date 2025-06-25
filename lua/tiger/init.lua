@@ -25,9 +25,9 @@ augroup END
 ]])
 
 -- Setting Color scheme
-vim.cmd [[colorscheme tokyodark]]
+vim.cmd [[colorscheme jellybeans-nvim]]
 
 
 -- Airline themes
-vim.cmd [[AirlineTheme base16_monokai]]
+vim.cmd [[AirlineTheme jellybeans]]
 
