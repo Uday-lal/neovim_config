@@ -10,7 +10,6 @@ return {
     config = function()
         local telescope = require("telescope")
         local action = require("telescope.actions")
-        
          -- set keymaps
         local keymap = vim.keymap -- for conciseness
 

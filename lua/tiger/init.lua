@@ -25,7 +25,7 @@ augroup END
 ]])
 
 -- Setting Color scheme
-vim.cmd [[colorscheme jellybeans-nvim]]
+vim.cmd [[colorscheme catppuccin]]
 
 
 -- Airline themes
