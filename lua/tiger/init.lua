@@ -13,7 +13,21 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
+opt.clipboard = "unnamedplus"
 
+-- React config
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+	pattern = "*.jsx",
+	callback = function()
+		vim.bo.filetype = "javascriptreact"
+	end,
+})
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+	pattern = "*.tsx",
+	callback = function()
+		vim.bo.filetype = "typescriptreact"
+	end,
+})
 
 -- make background transparent
 vim.cmd([[
@@ -25,9 +39,10 @@ augroup END
 ]])
 
 -- Setting Color scheme
-vim.cmd [[colorscheme catppuccin]]
-
+vim.cmd([[colorscheme catppuccin]])
 
 -- Airline themes
-vim.cmd [[AirlineTheme jellybeans]]
+vim.cmd([[AirlineTheme jellybeans]])
 
+-- Setting TreeSitter Highlighting
+vim.cmd([[TSBufEnable highlight]])
