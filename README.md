@@ -39,10 +39,6 @@ nvim
 ```vim
 :MasonInstall <server-name>
 ```
-```bash
-pip3 install neovim
-```
-
 
 ## 📚 Customization
 - 🎨 Themes, icons, and styling: adjust in `options.lua` or extend lualine settings.
