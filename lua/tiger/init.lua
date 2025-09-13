@@ -30,16 +30,17 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 })
 
 -- make background transparent
-vim.cmd([[
-augroup TransparentBackground
-autocmd!
-autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
-autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
-augroup END
-]])
+
+--nvim_create_autocmdm.cmd([[
+--augroup TransparentBackground
+--autocmd!
+--autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
+--autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
+--augroup END
+-- ]])
 
 -- Setting Color scheme
-vim.cmd([[colorscheme catppuccin]])
+vim.cmd([[colorscheme jellybeans-nvim]])
 
 -- Airline themes
 vim.cmd([[AirlineTheme jellybeans]])
